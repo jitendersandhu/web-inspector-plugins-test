@@ -10,7 +10,8 @@ angular.module('cwPluginApp', []).config(['$compileProvider', '$locationProvider
 
 });
 
-angular.module('cwPluginApp').controller('cwPluginAppController', ['$scope', function($scope) {
+angular.module('cwPluginApp').controller('cwPluginAppController', ['$scope', '$location', function($scope, $location) {
+    console.log($location);
     $scope.availablePlugins = ['event-inspector'];
     $scope.init = function(plugins) {
         $scope.plugins = plugins;
