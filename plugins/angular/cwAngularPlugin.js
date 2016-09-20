@@ -104,7 +104,7 @@ angular.module('cwPluginApp')
                         })();
                     },
                     /**
-                     * hideSpinner
+                     * hideSpinner.
                      *
                      * no @return
                      */
