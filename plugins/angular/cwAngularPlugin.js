@@ -1,11 +1,11 @@
 angular.module('cwPluginApp', []).config(['$compileProvider', '$locationProvider', function($compileProvider, $locationProvider) {
     // enable it to find the bootstrapped element
     $compileProvider.debugInfoEnabled(true);
-    $locationProvider.html5Mode({
-        enabled: true,
-        requireBase: false,
-        rewriteLinks: true
-    });
+    // $locationProvider.html5Mode({
+    //     enabled: true,
+    //     requireBase: false,
+    //     rewriteLinks: true
+    // });
 }]).run(function() {
 
 });
