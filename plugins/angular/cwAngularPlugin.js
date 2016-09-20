@@ -1,17 +1,16 @@
 angular.module('cwPluginApp', []).config(['$compileProvider', '$locationProvider', function($compileProvider, $locationProvider) {
     // enable it to find the bootstrapped element
     $compileProvider.debugInfoEnabled(true);
-    // $locationProvider.html5Mode({
-    //     enabled: true,
-    //     requireBase: false,
-    //     rewriteLinks: true
-    // });
+    $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false,
+        rewriteLinks: true
+    });
 }]).run(function() {
 
 });
 
-angular.module('cwPluginApp').controller('cwPluginAppController', ['$scope', '$location', function($scope, $location) {
-    console.log($location);
+angular.module('cwPluginApp').controller('cwPluginAppController', ['$scope', function($scope) {
     $scope.availablePlugins = ['event-inspector'];
     $scope.init = function(plugins) {
         $scope.plugins = plugins;
