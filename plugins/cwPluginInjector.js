@@ -2,8 +2,7 @@
  *
  * @description Columbo Web Dev Tools and brwoser extesnions
  * @version     1.0.0
- * @copyright   Apple, Inc 2016
- * @license     Apple Internal Use Only
+ * @license     Internal Use Only
  */
 
 window._cwPluginModule = (function() {
